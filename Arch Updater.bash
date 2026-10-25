@@ -19,7 +19,7 @@ if [ "$answer1" == "y" ]; then
     echo -e "${LIME}Pacman update has been completed. Starting AUR update.${RESET}"
     yay -Syu --noconfirm
     echo -e "${LIME}AUR update has been completed. Starting flatpak update.${RESET}"
-    flatpak update
+    flatpak update -y
     echo -e "${LIME}Flatpak update has been completed. The software finished. Quitting...${RESET}"
     sleep 3
     stty echo
