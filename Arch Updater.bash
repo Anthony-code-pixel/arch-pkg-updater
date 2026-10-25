@@ -1,6 +1,7 @@
 stty -echo
 LIME=$'\033[1;32m'
 RESET=$'\033[0m'
+echo "Welcome ${USER} to Arch Package Upgrader!"
 read -p "${LIME}Do you want to automatically update all services from pacman, AUR and flatpak? Type "y" for yes, or "n" for no: ${RESET}" answer
 
 if [ "$answer" == "y" ]; then
