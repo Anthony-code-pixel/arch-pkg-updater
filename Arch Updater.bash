@@ -8,7 +8,7 @@ if [ "$answer" == "y" ]; then
 else
     echo -e "${LIME}You either typed no or typed something else. Letters and capitalization matters. This program will shut down now.${RESET}"
     sleep 3
-    exit
+    exit 1
 fi
 if [ "$answer1" == "y" ]; then
     echo -e "${LIME}Starting update sequence in 10 seconds. Do not interrupt unless you have to or the software glitched. This terminal session will also clear in 10 seconds.${RESET}"
