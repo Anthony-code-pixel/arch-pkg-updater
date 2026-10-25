@@ -66,6 +66,7 @@ if [ "$answer1" == "y" ]; then
         echo Dnf update has finished.
     else
         echo Dnf is not installed on this software. Skipping
+    fi
     if [ "$flatpak" = true ]; then
         echo Flatpak is present on this software. Updating
         sudo flatpak update -y
