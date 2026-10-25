@@ -1,10 +1,10 @@
 LIME=$'\033[1;32m'
 RESET=$'\033[0m'
 echo "Welcome ${USER} to Arch Package Upgrader!"
-read -p "${LIME}Do you want to automatically update all services from pacman, AUR and flatpak? Type "y" for yes, or "n" for no: ${RESET}" answer
+read -p "${LIME}Do you want to automatically update all services from APT, Dnf, Pacman, Yay and Flatpak? Type "y" for yes, or "n" for no. Note, the program will check what package managers you have installed and update from them: ${RESET}" answer
 
 if [ "$answer" == "y" ]; then
-    read -p "${LIME}Are you sure you want to start the update sequence? This may take a while. Do not interrupt unless something glitches. If you quit this session, your terminal might remain a bold lime color. To fix it, just rerun the program or run 'echo -e "\e[0m"'. Note: all software downloaded via pacman, AUR and flatpak WILL BE updated. That may also include the Linux kernel. Are you SURE you want to update? Type "y" for yes, or "n" for no: ${RESET}" answer1
+    read -p "${LIME}Are you sure you want to start the update sequence? This may take a while. Do not interrupt unless something glitches. If you quit this session, your terminal might remain a bold lime color. To fix it, just rerun the program or run 'echo -e "\e[0m"'. Note: all software downloaded via detected package managers WILL BE updated. That may also include the Linux kernel. Are you SURE you want to update? Type "y" for yes, or "n" for no: ${RESET}" answer1
 else
     echo -e "${LIME}You either typed no or typed something else. Letters and capitalization matters. This program will shut down now.${RESET}"
     sleep 3
