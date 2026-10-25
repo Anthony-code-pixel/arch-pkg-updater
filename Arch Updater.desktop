@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Arch Updater
+Comment=Updates all pacman, AUR and flatpak in one simple executable command line.
+Exec=bash -c '"/home/$USER/Arch Updater.bash"'
+Icon=utilities-terminal
+Terminal=true
+Categories=Utility;
