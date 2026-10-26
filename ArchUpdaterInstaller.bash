@@ -41,7 +41,7 @@ ark -b -o /home/${USER}/Downloads/arch-pkg-updater-main-unarchived /home/${USER}
 else
 if command -v unzip &> /dev/null; then
 echo "Found unzip. Attempting to unzip folder."
-unzip /home/${USER}/Downloads/arch-pkg-updater-main.zip -d /home/${USER}/Downloads/arch-pkg-updater-main-unarchived
+unzip /home/${USER}/Downloads/arch-pkg-updater-main.zip -d /home/${USER}/Downloads/
 else
 echo "No supported program (Ark or unzip) found. Terminating progress."
 exit 1
