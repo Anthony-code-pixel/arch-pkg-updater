@@ -19,3 +19,11 @@ Enjoy! :)
 Bug patch (26th of October 2026)
 The installer if used unzip would extract to a wrongfully named folder, causing the installer to crash. It has been now fixed by me.
 There is also a known bug on Debian (didn't confirm it yet on other distros), if you right click on Arch Updater.bash and click Run as program, the color codes may break and make the updater unusable. If this happens to you, just run the program in your terminal: "./'Arch Updater.bash'". I am still thinking of fixing this. :)
+
+Feature update (11th of November 2026)
+I've been gone for a while, I know, I'm sorry. I am now starting to do a feature update that will check if an update actually succeeded, and there will be a present note with the summary of updates repositories after all updates finish. Something like this:
+===SUMMARY===
+Pacman: fail
+Yay: success
+Flatpak: not present
+Also, instead of closing the terminal, or starting the update in a specific 10 second timetable, you will now be able to continue to updating or closing the terminal by clicking any key. The update is supposed to launch in maximum of 3 hours. :)
