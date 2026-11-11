@@ -115,7 +115,7 @@ else
     echo -e "${LIME}Segregated by:${RESET}"
     echo -e "${LIME}Exists?${RESET}"
     echo -e "${LIME}Succesful?${RESET}"
-    echo -e "${LIME}Pacman:{RESET}"
+    echo -e "${LIME}Pacman:${RESET}"
     if [ "$pacmanexist" = no ]; then
         echo -e "${LIME}No${RESET}"
     else
