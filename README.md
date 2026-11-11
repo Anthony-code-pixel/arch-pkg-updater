@@ -27,3 +27,4 @@ Pacman: fail
 Yay: success
 Flatpak: not present
 Also, instead of closing the terminal, or starting the update in a specific 10 second timetable, you will now be able to continue to updating or closing the terminal by clicking any key. The update is supposed to launch in maximum of 3 hours. :)
+Update: the update has now dropped! Enjoy! :)
