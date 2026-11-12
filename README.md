@@ -28,3 +28,12 @@ Yay: success
 Flatpak: not present
 Also, instead of closing the terminal, or starting the update in a specific 10 second timetable, you will now be able to continue to updating or closing the terminal by clicking any key. The update is supposed to launch in maximum of 3 hours. :)
 Update: the update has now dropped! Enjoy! :)
+
+Slight update (also v1.2, 12th of November 2026)
+Now summary is segregated by colors.
+Success/Present: Lime
+Not present/Not run: Blue
+Fail: Red
+PS. The color segregation is not present in individual confirmations like Pacman updating ended with:
+This segregation is only for the summary.
+Enjoy! :)
