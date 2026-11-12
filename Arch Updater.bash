@@ -114,9 +114,9 @@ else
     fi
     echo -e "${LIME}Printing summary...${RESET}"
     echo -e "${LIME}===SUMMARY===${RESET}"
-    echo -e "${LIME}Segregated by:${RESET}"
-    echo -e "${LIME}Exists?${RESET}"
-    echo -e "${LIME}Succesful?${RESET}"
+    echo -e "${BLUE}Segregated by:${RESET}"
+    echo -e "${BLUE}Exists? Yes/No${RESET}"
+    echo -e "${BLUE}Succesful? Succesful/Failed${RESET}"
     echo -e "${LIME}Pacman:${RESET}"
     if [ "$pacmanexist" = no ]; then
         echo -e "${BLUE}No${RESET}"
