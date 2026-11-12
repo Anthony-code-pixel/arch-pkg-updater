@@ -103,7 +103,7 @@ else
     fi
     if [ "$flatpak" = true ]; then
         echo -e "${LIME}Flatpak is present on this software. Updating${RESET}"
-        if sudo flatpak update -y; then
+        if flatpak update -y; then
             flatpakinstall=pass
         else
             flatpakinstall=fail
