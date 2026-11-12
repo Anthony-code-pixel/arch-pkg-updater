@@ -37,3 +37,7 @@ Fail: Red
 PS. The color segregation is not present in individual confirmations like Pacman updating ended with:
 This segregation is only for the summary.
 Enjoy! :)
+
+Another update (also v1.2, 12th of November 2026)
+Fixed the known Debian bug (all that was required was to add #!/usr/bin/env bash at the top of the file, lol)
+Enjoy! :)
