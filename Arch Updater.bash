@@ -185,4 +185,3 @@ else
     echo -e "${LIME}This program has finished! Press any key to exit...${RESET}"
     read -n 1 -s
     exit 0
-fi
