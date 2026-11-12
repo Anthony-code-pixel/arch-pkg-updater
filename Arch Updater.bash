@@ -1,6 +1,6 @@
 LIME=$'\033[1;32m'
 RED=$'\033[1;31m'
-ORANGE=$'\033[1;34m'
+BLUE=$'\033[1;34m'
 RESET=$'\033[0m'
 echo "Welcome ${USER} to Arch Package Upgrader!"
 read -p "${LIME}Do you want to automatically update all services from APT, Dnf, Pacman, Yay and Flatpak? Type y for yes, or n for no. Note, the program will check what package managers you have installed and update from them: ${RESET}" answer
@@ -119,7 +119,7 @@ else
     echo -e "${LIME}Succesful?${RESET}"
     echo -e "${LIME}Pacman:${RESET}"
     if [ "$pacmanexist" = no ]; then
-        echo -e "${ORANGE}No${RESET}"
+        echo -e "${BLUE}No${RESET}"
     else
         echo -e "${LIME}Yes${RESET}"
         if [ "$pacmaninstall" = fail ]; then
@@ -130,7 +130,7 @@ else
     fi
     echo -e "${LIME}Yay${RESET}"
     if [ "$yayexist" = no ]; then
-        echo -e "${ORANGE}No${RESET}"
+        echo -e "${BLUE}No${RESET}"
     else
         echo -e "${LIME}Yes${RESET}"
         if [ "$yayinstall" = fail ]; then
@@ -141,7 +141,7 @@ else
     fi
     echo -e "${LIME}APT${RESET}"
     if [ "$aptexist" = no ]; then
-        echo -e "${ORANGE}No${RESET}"
+        echo -e "${BLUE}No${RESET}"
     else
         echo -e "${LIME}Yes${RESET}"
         if [ "$apt1install" = fail ]; then
@@ -153,7 +153,7 @@ else
         echo -e "${RED}Upgrade: Failed${RESET}"
         else
         if [ "$apt2install" = not_run ]; then
-        echo -e "${ORANGE}Upgrade: Not run (this may have occured because apt update failed).${RESET}"
+        echo -e "${BLUE}Upgrade: Not run (this may have occured because apt update failed).${RESET}"
         else
         echo -e "${LIME}Upgrade: Succesful${RESET}"
         fi
@@ -161,7 +161,7 @@ else
     fi
     echo -e "${LIME}Dnf${RESET}"
     if [ "$dnfexist" = no ]; then
-        echo -e "${ORANGE}No${RESET}"
+        echo -e "${BLUE}No${RESET}"
     else
         echo -e "${LIME}Yes${RESET}"
         if [ "$dnfinstall" = fail ]; then
@@ -172,7 +172,7 @@ else
     fi
     echo -e "${LIME}Flatpak${RESET}"
     if [ "$flatpakexist" = no ]; then
-        echo -e "${ORANGE}No${RESET}"
+        echo -e "${BLUE}No${RESET}"
     else
         echo -e "${LIME}Yes${RESET}"
         if [ "$flatpakinstall" = fail ]; then
