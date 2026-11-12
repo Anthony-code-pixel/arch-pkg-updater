@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 LIME=$'\033[1;32m'
 RED=$'\033[1;31m'
 BLUE=$'\033[1;34m'
@@ -55,23 +56,23 @@ else
         fi
         echo -e "${LIME}Pacman update ended with status: ${pacmaninstall}.${RESET}"
     else
-        echo "${LIME}Pacman is not installed on this software. Skipping${RESET}"
+        echo -e "${LIME}Pacman is not installed on this software. Skipping${RESET}"
         pacmanexist=no
     fi
     if [ "$yay" = true ]; then
-        echo "${LIME}Yay is present on this software. Updating${RESET}"
+        echo -e "${LIME}Yay is present on this software. Updating${RESET}"
         if yay -Syu --noconfirm; then
             yayinstall=pass
         else
             yayinstall=fail
         fi
-        echo "${LIME}Yay update ended with status: ${yayinstall}.${RESET}"
+        echo -e "${LIME}Yay update ended with status: ${yayinstall}.${RESET}"
     else
-        echo "${LIME}Yay is not installed on this software. Skipping${RESET}"
+        echo -e "${LIME}Yay is not installed on this software. Skipping${RESET}"
         yayexist=no
     fi
     if [ "$apt" = true ]; then
-        echo "${LIME}APT is present on this software. Updating${RESET}"
+        echo -e "${LIME}APT is present on this software. Updating${RESET}"
         if sudo apt-get update -y; then
             apt1install=pass
             if sudo apt-get upgrade -y; then
@@ -83,33 +84,33 @@ else
             apt1install=fail
             apt2install=not_run
         fi
-        echo "${LIME}APT update ended with status: ${apt1install} and ${apt2install} (this will be clarified in summary).${RESET}"
+        echo -e "${LIME}APT update ended with status: ${apt1install} and ${apt2install} (this will be clarified in summary).${RESET}"
     else
-        echo "${LIME}APT is not installed on this software. Skipping${RESET}"
+        echo -e "${LIME}APT is not installed on this software. Skipping${RESET}"
         aptexist=no
     fi
     if [ "$dnf" = true ]; then
-        echo "${LIME}Dnf is present on this software. Updating${RESET}"
+        echo -e "${LIME}Dnf is present on this software. Updating${RESET}"
         if sudo dnf upgrade -y; then
             dnfinstall=pass
         else
             dnfinstall=fail
         fi
-        echo "${LIME}Dnf update ended with status: ${dnfinstall}.${RESET}"
+        echo -e "${LIME}Dnf update ended with status: ${dnfinstall}.${RESET}"
     else
-        echo "${LIME}Dnf is not installed on this software. Skipping${RESET}"
+        echo -e "${LIME}Dnf is not installed on this software. Skipping${RESET}"
         dnfexist=no
     fi
     if [ "$flatpak" = true ]; then
-        echo "${LIME}Flatpak is present on this software. Updating${RESET}"
+        echo -e "${LIME}Flatpak is present on this software. Updating${RESET}"
         if sudo flatpak update -y; then
             flatpakinstall=pass
         else
             flatpakinstall=fail
         fi
-        echo "${LIME}Flatpak update ended with status: ${flatpakinstall}.${RESET}"
+        echo -e "${LIME}Flatpak update ended with status: ${flatpakinstall}.${RESET}"
     else
-        echo "${LIME}Flatpak is not installed on this software. Skipping${RESET}"
+        echo -e "${LIME}Flatpak is not installed on this software. Skipping${RESET}"
         flatpakexist=no
     fi
     echo -e "${LIME}Printing summary...${RESET}"
