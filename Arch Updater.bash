@@ -124,9 +124,9 @@ else
     else
         echo -e "${LIME}Yes${RESET}"
         if [ "$pacmaninstall" = fail ]; then
-        echo -e "${RED}Failed${RESET}"
+            echo -e "${RED}Failed${RESET}"
         else
-        echo -e "${LIME}Succesful${RESET}"
+            echo -e "${LIME}Succesful${RESET}"
         fi
     fi
     echo -e "${LIME}Yay${RESET}"
@@ -135,9 +135,9 @@ else
     else
         echo -e "${LIME}Yes${RESET}"
         if [ "$yayinstall" = fail ]; then
-        echo -e "${RED}Failed${RESET}"
+            echo -e "${RED}Failed${RESET}"
         else
-        echo -e "${LIME}Succesful${RESET}"
+            echo -e "${LIME}Succesful${RESET}"
         fi
     fi
     echo -e "${LIME}APT${RESET}"
@@ -146,19 +146,19 @@ else
     else
         echo -e "${LIME}Yes${RESET}"
         if [ "$apt1install" = fail ]; then
-        echo -e "${RED}Update: Failed${RESET}"
+            echo -e "${RED}Update: Failed${RESET}"
         else
-        echo -e "${LIME}Update: Succesful${RESET}"
+            echo -e "${LIME}Update: Succesful${RESET}"
         fi
         if [ "$apt2install" = fail ]; then
-        echo -e "${RED}Upgrade: Failed${RESET}"
+            echo -e "${RED}Upgrade: Failed${RESET}"
         else
-        if [ "$apt2install" = not_run ]; then
-        echo -e "${BLUE}Upgrade: Not run (this may have occured because apt update failed).${RESET}"
-        else
-        echo -e "${LIME}Upgrade: Succesful${RESET}"
+            if [ "$apt2install" = not_run ]; then
+                echo -e "${BLUE}Upgrade: Not run (this may have occured because apt update failed).${RESET}"
+            else
+                echo -e "${LIME}Upgrade: Succesful${RESET}"
+            fi
         fi
-    fi
     fi
     echo -e "${LIME}Dnf${RESET}"
     if [ "$dnfexist" = no ]; then
@@ -166,9 +166,9 @@ else
     else
         echo -e "${LIME}Yes${RESET}"
         if [ "$dnfinstall" = fail ]; then
-        echo -e "${RED}Failed${RESET}"
+            echo -e "${RED}Failed${RESET}"
         else
-        echo -e "${LIME}Succesful${RESET}"
+            echo -e "${LIME}Succesful${RESET}"
         fi
     fi
     echo -e "${LIME}Flatpak${RESET}"
@@ -177,9 +177,9 @@ else
     else
         echo -e "${LIME}Yes${RESET}"
         if [ "$flatpakinstall" = fail ]; then
-        echo -e "${RED}Failed${RESET}"
+            echo -e "${RED}Failed${RESET}"
         else
-        echo -e "${LIME}Succesful${RESET}"
+            echo -e "${LIME}Succesful${RESET}"
         fi
     fi
     echo -e "${LIME}This program has finished! Press any key to exit...${RESET}"
